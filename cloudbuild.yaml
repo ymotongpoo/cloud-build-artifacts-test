@@ -1,0 +1,12 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build',
+         '-t',
+         'gcr.io/$PROJECT_ID/cb-artifact-test',
+         '.']
+# https://cloud.google.com/cloud-build/docs/configuring-builds/store-images-artifacts#artifacts_examples
+artifacts:
+  objects:
+    paths: ['/text/*.txt']
+
+
