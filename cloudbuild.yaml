@@ -7,6 +7,7 @@ steps:
 # https://cloud.google.com/cloud-build/docs/configuring-builds/store-images-artifacts#artifacts_examples
 artifacts:
   objects:
+    location: ['gs://cb-artifact-test']
     paths: ['/text/*.txt']
 
 
