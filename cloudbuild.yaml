@@ -6,6 +6,6 @@ steps:
          '.']
 artifacts:
   objects:
-    location: ['gs://cb-artifact-test']
+    location: 'gs://cb-artifact-test'
     paths: ['/build/*']
 
