@@ -7,5 +7,5 @@ steps:
 artifacts:
   objects:
     location: ['gs://cb-artifact-test']
-    paths: ['/text/*.txt']
+    paths: ['/build/*']
 
