@@ -1,4 +1,6 @@
 FROM debian:stretch-slim
 
-COPY a.txt b.txt /text/
+COPY a.txt /text/
+COPY b.txt /text/
+WORKDIR /text/
 

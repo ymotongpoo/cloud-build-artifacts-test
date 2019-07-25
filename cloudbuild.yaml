@@ -9,4 +9,3 @@ artifacts:
     location: ['gs://cb-artifact-test']
     paths: ['/text/*.txt']
 
-
