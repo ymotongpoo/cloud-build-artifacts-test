@@ -10,7 +10,7 @@ steps:
          '/workspace:/out',
          'gcr.io/$PROJECT_ID/cb-artifact-test',
          'cp',
-         '/build/*',
+         '/build/',
          '/out/']
 artifacts:
   objects:
