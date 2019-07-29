@@ -14,4 +14,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://cb-artifact-test'
-    paths: ['hello.*']
+    paths: ['build/hello.*']
