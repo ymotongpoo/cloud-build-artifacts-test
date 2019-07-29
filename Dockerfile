@@ -5,4 +5,3 @@ RUN apt-get -qq update \
 COPY main.go /build/
 WORKDIR /build/
 RUN go build -o hello main.go
-

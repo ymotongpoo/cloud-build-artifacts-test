@@ -4,8 +4,16 @@ steps:
          '-t',
          'gcr.io/$PROJECT_ID/cb-artifact-test',
          '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['run',
+         '--volume',
+         '$PWD:/out'
+         'gcr.io/$PROJECT_ID/cb-artifact-test',
+         'cp',
+         '/build/*',
+         '/out/'
 artifacts:
   objects:
     location: 'gs://cb-artifact-test'
-    paths: ['/build/*']
+    paths: ['*']
 
