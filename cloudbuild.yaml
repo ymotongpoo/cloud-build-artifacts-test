@@ -9,7 +9,7 @@ steps:
          '--volume',
          '/workspace:/out',
          'gcr.io/$PROJECT_ID/cb-artifact-test',
-         'cp',
+         'cp', '-r',
          '/build/',
          '/out/']
 artifacts:
