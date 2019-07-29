@@ -6,7 +6,8 @@ steps:
          '.']
 - name: 'gcr.io/$PROJECT_ID/cb-artifact-test'
   args: ['cp',
-         '/build/*',
+         '-r',
+         '/build/',
          '/workspace/']
 - name: 'busybox'
   args: ['find', '/workspace']
