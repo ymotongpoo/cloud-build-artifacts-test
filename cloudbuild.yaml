@@ -7,7 +7,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['run',
          '--volume',
-         '$PWD:/out'
+         '$PWD:/out',
          'gcr.io/$PROJECT_ID/cb-artifact-test',
          'cp',
          '/build/*',
