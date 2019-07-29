@@ -11,7 +11,7 @@ steps:
          'gcr.io/$PROJECT_ID/cb-artifact-test',
          'cp',
          '/build/*',
-         '/out/'
+         '/out/']
 artifacts:
   objects:
     location: 'gs://cb-artifact-test'
