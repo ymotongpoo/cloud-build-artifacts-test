@@ -4,14 +4,12 @@ steps:
          '-t',
          'gcr.io/$PROJECT_ID/cb-artifact-test',
          '.']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['run',
-         '--volume',
-         '/workspace:/out',
-         'gcr.io/$PROJECT_ID/cb-artifact-test',
-         'cp', '-r',
-         '/build/',
-         '/out/']
+- name: 'gcr.io/$PROJECT_ID/cb-artifact-test'
+  args: ['cp',
+         '/build/*',
+         '/workspace/']
+- name: 'busybox'
+  args: ['find', '/workspace']
 artifacts:
   objects:
     location: 'gs://cb-artifact-test'
